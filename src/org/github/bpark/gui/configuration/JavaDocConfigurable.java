@@ -44,6 +44,19 @@ import java.util.Map;
  */
 public class JavaDocConfigurable implements Configurable {
 
+    /** The description. */
+    private static final String DESCRIPTION =
+        "Description:\n" +
+        "Edit the template as you need. Make sure, that the template is a valid javadoc comment. You can use " +
+        "the full velocity template language to modify the javadoc template. Here is a list of the defined " +
+        "variables:\n\n" +
+        "$field - the field name\n" +
+        "$field_type - the field type\n" +
+        "$class_name - the class name\n" +
+        "$full_class_name - the full qualified class name\n" +
+        "$project_name - the project name\n\n" +
+        "Note, the comment will be auto-formatted with your current formatting settings.";
+
     /** The main panel. */
     private JPanel mainPanel;
     /** JList with the specific configuration names. */
@@ -93,7 +106,7 @@ public class JavaDocConfigurable implements Configurable {
             templateMap.get(0).getAbstractDocConfig().getConfigName(),
             templateMap.get(1).getAbstractDocConfig().getConfigName()
         });
-        descriptionArea.setText("Chult is located on an island in the southern part of the Trackless Sea, off the coast of Calimshan.[1] Formerly, the land was located at the westernmost end of the Chultan peninsula. It is a mountainous jungle of savage beasts, hulking dinosaurs, and disease-ridden swamps. Savage human tribes, goblins, and even stranger monstrous folk haunt the thick jungles. Nevertheless, Chult draws adventurers who search for its legendary riches. The primordial Ubtao is almost exclusively revered in the land, for the divine powers of Faerûn awarded Ubtao the dominion over the land of Chult in exchange for the deity's vigilance over the threat from under the Peaks of Flame. ");
+        descriptionArea.setText(DESCRIPTION);
         configJList.addListSelectionListener(new ListSelectionListener() {
             public void valueChanged(ListSelectionEvent e) {
                 if (e.getValueIsAdjusting()) {

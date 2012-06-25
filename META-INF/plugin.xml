@@ -23,7 +23,7 @@
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
 
-<idea-plugin url="www.github.org/bpark/gen-javadoc" version="1">
+<idea-plugin url="http://github.com/bpark/gen-javadoc" version="1">
     <!-- plugin name -->
     <name>gen-javadoc</name>
     <!-- description -->
@@ -32,7 +32,7 @@
     <version>1.0</version>
 
     <!-- minimum IDEA build number with which the plugin is compatible -->
-    <idea-version since-build="111.69"/>
+    <idea-version since-build="117.418"/>
 
     <actions>
         <group id="docplugin.group" text="Generate JavaDoc" description="Group of Javascript generators" popup="true">
