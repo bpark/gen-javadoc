@@ -27,9 +27,14 @@
     <!-- plugin name -->
     <name>gen-javadoc</name>
     <!-- description -->
-    <description>Plugin for generating javadoc comments for setters and getters. Javadoc comments are configurable with velocity templates.</description>
+    <description>
+        Plugin for generating javadoc comments for setters and getters, with the common generating dialog behavior.
+        Templates can changed in the IDE settings menu under JavaDoc Generator. The template syntax is based on velocity.
+    </description>
     <!-- plugin version -->
     <version>1.0</version>
+
+    <vendor url="https://github.com/bpark/gen-javadoc" email="burt.parkers@googlemail.com">Burt Parkers</vendor>
 
     <!-- minimum IDEA build number with which the plugin is compatible -->
     <idea-version since-build="117.418"/>
